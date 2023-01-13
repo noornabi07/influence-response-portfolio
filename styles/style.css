@@ -27,7 +27,6 @@ header section styles
 ------------------------*/
 .header-section{
     padding: 20px 120px;
-    height: 80vh;
 }
 .menu-bar{
     display: flex;
@@ -212,4 +211,117 @@ footer section part styles
 .social-icon ul li{
     color: #fff;
     font-size: 20px;
+}
+/*--------------------------------------
+ styles all setup close boooom boooooooom 
+ -------------------------------------*/
+
+
+ /* media query responsive for small mobile */
+ @media screen and (max-width: 576px) {
+    .menu-bar {
+        flex-direction: column;
+        margin-bottom: -91px;
+    }
+    .nave-icon-part h3 {
+        font-size: 12px;
+    }
+    .nave-menu-part ul {
+        flex-direction: column;
+        row-gap: 5px;
+    }
+    .banner-part {
+        flex-direction: column;
+    }
+    .banner-txt-part, 
+    .banner-txt-part p{
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+    }
+    .banner-txt-part h2 {
+        font-size: 17px;
+    }
+    .banner-img-part img {
+        width: 257px;
+        height: auto;
+    }
+    .banner-img-part {
+        margin-top: 20px;
+    }
+    .company-logos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        
+    }
+    .product-items {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+    .product-blog p {
+        width: 366px;
+    }
+    .featured-items {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .featured-img-part{
+        width: 100%;
+    }
+    .featured-txt-part{
+        text-align: center;
+    }
+ }
+
+ /* media query for biger mobile  */
+ @media screen and (min-width: 577px) and (max-width: 768px) {
+    .menu-bar {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .banner-part {
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-img-part {
+        margin-top: 30px;
+    }
+    .company-section{
+        text-align: center;
+    }
+    .company-logos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 20px;
+    }
+    .product-items {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+    .featured-items {
+        gap: 30px;
+    }
+    .featured-img-part, .featured-txt-part{
+        padding: 10px;
+    }
+}
+
+/* tablet media query responsive */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .header-section {
+        padding: 20px 50px;
+    }
+    .banner-img-part img {
+        width: 320px;
+    }
+    .banner-part {
+        gap: 20px;
+    }
+    .product-items {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
 }
